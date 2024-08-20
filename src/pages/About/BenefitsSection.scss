@@ -1,0 +1,133 @@
+.benefits-section {
+  text-align: center;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    font-family: 'regularbrownSugar';
+    font-weight: lighter;
+  }
+
+  .benefits-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 50px;
+    flex-wrap: wrap; 
+
+    .benefit-card {
+      flex: 1 1 22%; 
+      padding: 35px 20px;
+      background-color: #fff;
+      border: 1px solid rgb(146, 146, 146);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        background-color: transparent;
+        // background-image: url('../../../../assets/shared/benefits.jpg'); 
+        background-size: cover;
+        background-position: center;
+        filter: brightness(80%);
+      }
+
+      .benefit-para {
+        font-size: 16px;
+        color: #656565;
+        line-height: 1.6;
+        z-index: 2; 
+      }
+
+      &:hover .benefit-para {
+        color: #fff; 
+      }
+    }
+  }
+  
+  .see-all-btn {
+    background-color: rgb(30,30,29);
+    color: #fff;
+    padding: 10px 35px;
+    border: none;
+    margin-top: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #333333cb;
+    }
+  }
+
+
+  @media (max-width: 1250px) {
+    .benefits-grid {
+      gap: 30px; 
+    }
+
+    .benefit-card {
+      flex: 1 1 30%; 
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .benefits-grid {
+      gap: 30px;
+    }
+
+    .benefit-card {
+      flex: 1 1 30%; 
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .benefits-grid {
+      gap: 20px; 
+    }
+
+    .benefit-card {
+      flex: 1 1 45% !important; 
+    }
+
+    .see-all-btn {
+      font-size: 1rem; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .benefits-grid {
+      flex-direction: column;
+      gap: 15px; 
+      margin-left: 0;
+    }
+
+    .benefit-card {
+      flex: 1 1 100%;
+      padding: 20px 10px; 
+    }
+
+    h1 {
+      font-size: 2.5rem; 
+    }
+
+    .see-all-btn {
+      padding: 8px 25px; 
+    }
+  }
+}
