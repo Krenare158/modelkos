@@ -1,0 +1,31 @@
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .category-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color:rgb(30,30,29);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .category-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    .category-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

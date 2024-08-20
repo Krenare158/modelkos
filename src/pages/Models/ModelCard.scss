@@ -1,0 +1,67 @@
+.model-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px;
+}
+
+.model-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.model-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.771), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.model-card:hover::after {
+  opacity: 1;
+}
+
+.model-card:hover img {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1200px) {
+  .model-card {
+    width: 25%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .model-card {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .model-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .model-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .model-card {
+    width: 100%;
+  }
+}
+

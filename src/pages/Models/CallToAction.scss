@@ -1,0 +1,77 @@
+.call-to-action {
+  background-color: #dedcdc;
+  padding: 20px;
+  border: 1px solid #dedcdc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  height: 70%;
+  max-width: 400px; 
+  margin: 20px auto; 
+}
+
+.want-to{
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 5%;
+}
+
+.call-to-action p {
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.call-to-action .cta-button {
+  margin-top: 10px;
+}
+
+.call-to-action:hover{
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.316), transparent);
+}
+@media (max-width: 992px) {
+  .call-to-action {
+    width: 100%; 
+    padding: 15px; 
+  }
+  .want-to {
+    font-size: 1rem; 
+  }
+  .call-to-action p {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .call-to-action {
+    width: 95%; 
+    padding: 15px; 
+  }
+  .want-to {
+    font-size: 1rem; 
+  }
+  .call-to-action p {
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .call-to-action {
+    width: 100%; 
+    padding: 10px; 
+    top: 15%;
+  }
+  .want-to {
+    font-size: 1rem; 
+  }
+  .call-to-action p {
+    font-size: 12px; 
+  }
+}
